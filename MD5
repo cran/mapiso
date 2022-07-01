@@ -1,0 +1,16 @@
+6fe97db73804cf7557fef0bc2692537b *DESCRIPTION
+c960d23045a1fc157d1070b05b0ba883 *NAMESPACE
+7d4d97f922bfd461810fd52357def137 *R/mapiso.R
+e62cf32f15c54575106cd1c144c7f27d *R/package.R
+83ef2112b373b94786e1539a497b12bb *README.md
+e1bb200cef6426f82f18bb05aef543e3 *inst/csv/elevation.csv
+1da132ba0c7545f4cd45e4459fd151a5 *inst/gpkg/elevation.gpkg
+fd836d983674af48bd7ef9d379838f1c *inst/tif/elevation.tif
+252041591bed765920223d4d62f4765f *inst/tinytest/test_mapiso.R
+ebdf92c8f0e326a95ca386c8acfc174b *man/figures/README-data.frame-1.png
+ac09350510fb3e16e8ece272022eb1e4 *man/figures/README-raster-1.png
+35556f83fa4abe79f4554090cc186133 *man/figures/README-sf-1.png
+6e98eb3836ae54a48f1cd26f93ce134e *man/figures/logo.png
+681d7239d487139a9d00a10572dea814 *man/mapiso-package.Rd
+bf35270f0d8ebb0c9ed417c926b80279 *man/mapiso.Rd
+19983515dabd439e40176dd9bca59dbe *tests/tinytest.R
