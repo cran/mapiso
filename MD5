@@ -1,12 +1,13 @@
-6fe97db73804cf7557fef0bc2692537b *DESCRIPTION
-c960d23045a1fc157d1070b05b0ba883 *NAMESPACE
-7d4d97f922bfd461810fd52357def137 *R/mapiso.R
+b09b8d800e4af163bc6f617b52bec6dd *DESCRIPTION
+78ad62d3a9f6c0f4ae188927f2df65b9 *NAMESPACE
+dc0184922a71c31a3dc15e7a3fa7aa76 *NEWS.md
+cf266c9f4c3d44b2d1f8b59d4a86e43f *R/mapiso.R
 e62cf32f15c54575106cd1c144c7f27d *R/package.R
 83ef2112b373b94786e1539a497b12bb *README.md
 e1bb200cef6426f82f18bb05aef543e3 *inst/csv/elevation.csv
 1da132ba0c7545f4cd45e4459fd151a5 *inst/gpkg/elevation.gpkg
 fd836d983674af48bd7ef9d379838f1c *inst/tif/elevation.tif
-252041591bed765920223d4d62f4765f *inst/tinytest/test_mapiso.R
+eec573c73f6ac6696528cba33c8120a3 *inst/tinytest/test_mapiso.R
 ebdf92c8f0e326a95ca386c8acfc174b *man/figures/README-data.frame-1.png
 ac09350510fb3e16e8ece272022eb1e4 *man/figures/README-raster-1.png
 35556f83fa4abe79f4554090cc186133 *man/figures/README-sf-1.png
