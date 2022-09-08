@@ -1,7 +1,7 @@
 Package: mapiso
 Type: Package
 Title: Create Contour Polygons from Regular Grids
-Version: 0.1.2
+Version: 0.2.0
 Authors@R: 
     person("Timothée", "Giraud", email = "timothee.giraud@cnrs.fr", 
         role = c("cre","aut"), comment = c(ORCID = "0000-0002-1932-3323"))
@@ -15,10 +15,10 @@ Imports: sf, isoband
 Suggests: covr, mapsf, terra, tinytest
 License: GPL (>= 3)
 Encoding: UTF-8
-RoxygenNote: 7.2.0
+RoxygenNote: 7.2.1
 NeedsCompilation: no
-Packaged: 2022-07-07 07:52:43 UTC; tim
+Packaged: 2022-09-08 09:13:33 UTC; tim
 Author: Timothée Giraud [cre, aut] (<https://orcid.org/0000-0002-1932-3323>)
 Maintainer: Timothée Giraud <timothee.giraud@cnrs.fr>
 Repository: CRAN
-Date/Publication: 2022-07-07 11:20:02 UTC
+Date/Publication: 2022-09-08 10:02:58 UTC

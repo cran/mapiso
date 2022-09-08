@@ -15,7 +15,7 @@ mapiso(x, var, breaks, nbreaks = 8, mask, coords, crs)
 
 \item{nbreaks}{number of classes}
 
-\item{mask}{an sf object of polygons or multipolygons.
+\item{mask}{an sf object or SpatVector of polygons or multipolygons.
 \code{mask} is  used to clip contour polygons}
 
 \item{coords}{names of the coordinates variables
@@ -24,14 +24,16 @@ mapiso(x, var, breaks, nbreaks = 8, mask, coords, crs)
 \item{crs}{CRS code (e.g. "epsg:2154"), for data.frames only.}
 }
 \value{
-The output is an sf object of polygons. The data frame contains three
-fields: id (id of each polygon), isomin and isomax (minimum and maximum
+The output is an sf object of polygons (or a SpatVector if \code{x}
+is a SpatVector). The data.frame contains three fields:
+id (id of each polygon), isomin and isomax (minimum and maximum
 breaks of the polygon).
 }
 \description{
 Regularly spaced grids containing continuous data are
 transformed into contour polygons. A grid can be defined by a
-data.frame (x, y, value), an \code{sf} object or a \code{terra} SpatRaster.
+data.frame (x, y, value), an \code{sf} object, a \code{terra} SpatRaster or
+SpatVector.
 }
 \examples{
 # sf, using a mask
@@ -60,13 +62,19 @@ if (require(mapsf, quietly = TRUE)) {
   mf_map(isod, "isomin", "choro", breaks = bks, leg_title = "Elevation")
 }
 \dontrun{
-# terra
 if (require(terra, quietly = TRUE)) {
+  # terra SpatRaster
   r <- rast(system.file("tif/elevation.tif", package = "mapiso"))
   isor <- mapiso(x = r)
   plot(r)
-  library(sf)
   plot(st_geometry(isor), add = TRUE, col = NA)
+  # terra SpatVector
+  s_terra <- vect(s)
+  m_terra <- vect(m)
+  isost <- mapiso(
+    x = s_terra, var = "elevation", mask = m_terra
+  )
+  plot(isost)
 }
 }
 
