@@ -18,7 +18,7 @@ The goal of `mapiso` is to ease the transformation of regularly spaced
 grids containing continuous data into contour polygons. These grids can
 be defined by data.frames (x, y, value), `sf` objects or SpatRasters
 from `terra`.  
-`mapsio` is a wrapper around [`isoband`](https://wilkelab.org/isoband/).
+`mapsio` is a wrapper around [`isoband`](https://isoband.r-lib.org).
 
 ## Installation
 
@@ -43,7 +43,7 @@ remotes::install_github("riatelab/mapiso")
 ``` r
 library(mapiso)
 library(terra)
-#> terra 1.6.7
+#> terra 1.7.29
 library(mapsf)
 r <- rast(system.file("tif/elevation.tif", package = "mapiso"))
 isor <- mapiso(x = r)
